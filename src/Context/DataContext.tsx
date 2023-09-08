@@ -5,10 +5,10 @@ type InterfaceDataContext = {
 	data: InterfaceVendas[] | null;
 	loading: boolean;
 	error: string | null;
-	inicio: string;
-	setInicio: React.Dispatch<React.SetStateAction<string>>;
-	final: string;
-	setFinal: React.Dispatch<React.SetStateAction<string>>;
+	start: string;
+	setStart: React.Dispatch<React.SetStateAction<string>>;
+	end: string;
+	setEnd: React.Dispatch<React.SetStateAction<string>>;
 };
 
 type InterfaceVendas = {
@@ -39,16 +39,16 @@ function getDate(n: number) {
 }
 
 export const DataContextProvider = ({ children }: React.PropsWithChildren) => {
-	const [inicio, setInicio] = React.useState(getDate(30));
-	const [final, setFinal] = React.useState(getDate(0));
+	const [start, setStart] = React.useState(getDate(30));
+	const [end, setEnd] = React.useState(getDate(0));
 
 	const { data, loading, error } = useFetch<InterfaceVendas[]>(
-		`https://data.origamid.dev/vendas/?inicio=${inicio}&final=${final}`,
+		`https://data.origamid.dev/vendas/?inicio=${start}&final=${end}`,
 	);
 
 	return (
 		<DataContext.Provider
-			value={{ data, loading, error, inicio, setInicio, final, setFinal }}
+			value={{ data, loading, error, start, setStart, end, setEnd }}
 		>
 			{children}
 		</DataContext.Provider>
