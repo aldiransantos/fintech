@@ -1,7 +1,7 @@
 import Header from './Components/Header';
 import Sidenav from './Components/Sidenav';
 import { DataContextProvider } from './Context/DataContext';
-import Resumo from './Pages/Resumo';
+import Summary from './Pages/Summary';
 import './Style.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 				<Sidenav />
 				<main>
 					<Header />
-					<Resumo />
+					<Summary />
 				</main>
 			</div>
 		</DataContextProvider>
