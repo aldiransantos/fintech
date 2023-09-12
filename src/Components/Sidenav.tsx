@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import resumo from '../assets/icons/resumo.svg';
 import vendas from '../assets/icons/vendas.svg';
 import webhooks from '../assets/icons/webhooks.svg';
@@ -16,37 +17,37 @@ const Sidenav = () => {
 					<span>
 						<img src={resumo} alt="" />
 					</span>
-					<a href="">Resumo</a>
+					<NavLink to="/">Resumo</NavLink>
 				</li>
 				<li>
 					<span>
 						<img src={vendas} alt="" />
 					</span>
-					<a href="">Vendas</a>
+					<NavLink to="/vendas">Vendas</NavLink>
 				</li>
 				<li>
 					<span>
 						<img src={webhooks} alt="" />
 					</span>
-					<a>Webhooks</a>
+					<p>Webhooks</p>
 				</li>
 				<li>
 					<span>
 						<img src={configuracoes} alt="" />
 					</span>
-					<a>Configurações</a>
+					<p>Configurações</p>
 				</li>
 				<li>
 					<span>
 						<img src={contato} alt="" />
 					</span>
-					<a>Contato</a>
+					<p>Contato</p>
 				</li>
 				<li>
 					<span>
 						<img src={sair} alt="" />
 					</span>
-					<a>Sair</a>
+					<p>Sair</p>
 				</li>
 			</ul>
 		</nav>
