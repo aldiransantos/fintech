@@ -14,40 +14,52 @@ const Sidenav = () => {
 
 			<ul>
 				<li>
-					<span>
-						<img src={resumo} alt="" />
-					</span>
-					<NavLink to="/">Resumo</NavLink>
+					<NavLink to="/">
+						<span>
+							<img src={resumo} alt="" />
+						</span>
+						Resumo
+					</NavLink>
 				</li>
 				<li>
-					<span>
-						<img src={vendas} alt="" />
-					</span>
-					<NavLink to="/vendas">Vendas</NavLink>
+					<NavLink to="/vendas">
+						<span>
+							<img src={vendas} alt="" />
+						</span>
+						Vendas
+					</NavLink>
 				</li>
 				<li>
-					<span>
-						<img src={webhooks} alt="" />
-					</span>
-					<p>Webhooks</p>
+					<p>
+						<span>
+							<img src={webhooks} alt="" />
+						</span>
+						Webhooks
+					</p>
 				</li>
 				<li>
-					<span>
-						<img src={configuracoes} alt="" />
-					</span>
-					<p>Configurações</p>
+					<p>
+						<span>
+							<img src={configuracoes} alt="" />
+						</span>
+						Configurações
+					</p>
 				</li>
 				<li>
-					<span>
-						<img src={contato} alt="" />
-					</span>
-					<p>Contato</p>
+					<p>
+						<span>
+							<img src={contato} alt="" />
+						</span>
+						Contato
+					</p>
 				</li>
 				<li>
-					<span>
-						<img src={sair} alt="" />
-					</span>
-					<p>Sair</p>
+					<p>
+						<span>
+							<img src={sair} alt="" />
+						</span>
+						Sair
+					</p>
 				</li>
 			</ul>
 		</nav>

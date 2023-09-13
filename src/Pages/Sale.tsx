@@ -7,7 +7,6 @@ type InterfaceSalesWithoutDate = Omit<InterfaceSales, 'data'>;
 
 const Sale = () => {
 	const { id } = useParams();
-	console.log(id);
 	const { data, loading } = useFetch<InterfaceSalesWithoutDate>(
 		`https://data.origamid.dev/vendas/${id}`,
 	);
