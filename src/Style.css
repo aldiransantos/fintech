@@ -149,6 +149,14 @@ ul {
   color: inherit;
 }
 
+.buyer div {
+  text-transform: capitalize;
+}
+
+.buyer div span {
+  font-weight: 600;
+}
+
 @media (max-width: 1000px) {
   .resumo {
     flex-direction: column;

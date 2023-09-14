@@ -4,7 +4,10 @@ import { InterfaceSales } from '../Context/DataContext';
 const SaleItem = ({ sale }: { sale: InterfaceSales }) => {
 	return (
 		<div className="sale box">
-			<NavLink to={`/vendas/${sale.id}`} style={{ fontFamily: 'monospace' }}>
+			<NavLink
+				to={`/vendas/${sale.id}`}
+				style={{ fontFamily: 'monospace', fontWeight: 600 }}
+			>
 				{sale.id}
 			</NavLink>
 			<div>{sale.nome}</div>

@@ -16,7 +16,7 @@ const Sidenav = () => {
 				<li>
 					<NavLink to="/">
 						<span>
-							<img src={resumo} alt="" />
+							<img src={resumo} alt="Resumo" />
 						</span>
 						Resumo
 					</NavLink>
@@ -24,7 +24,7 @@ const Sidenav = () => {
 				<li>
 					<NavLink to="/vendas">
 						<span>
-							<img src={vendas} alt="" />
+							<img src={vendas} alt="Vendas" />
 						</span>
 						Vendas
 					</NavLink>
@@ -32,7 +32,7 @@ const Sidenav = () => {
 				<li>
 					<p>
 						<span>
-							<img src={webhooks} alt="" />
+							<img src={webhooks} alt="Webhooks" />
 						</span>
 						Webhooks
 					</p>
@@ -40,7 +40,7 @@ const Sidenav = () => {
 				<li>
 					<p>
 						<span>
-							<img src={configuracoes} alt="" />
+							<img src={configuracoes} alt="Configuracões" />
 						</span>
 						Configurações
 					</p>
@@ -48,7 +48,7 @@ const Sidenav = () => {
 				<li>
 					<p>
 						<span>
-							<img src={contato} alt="" />
+							<img src={contato} alt="Contato" />
 						</span>
 						Contato
 					</p>
@@ -56,7 +56,7 @@ const Sidenav = () => {
 				<li>
 					<p>
 						<span>
-							<img src={sair} alt="" />
+							<img src={sair} alt="Sair" />
 						</span>
 						Sair
 					</p>
