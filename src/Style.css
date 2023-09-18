@@ -78,6 +78,11 @@ ul {
   grid-template-columns: 240px auto;
 }
 
+main > ul {
+  display: grid;
+  gap: var(--gap-s);
+}
+
 .sidenav li {
   display: flex;
   align-items: center;
@@ -136,7 +141,6 @@ ul {
   display: grid;
   grid-template-columns: auto auto 1fr;
   gap: var(--gap);
-  margin-bottom: var(--gap-s);
   align-items: center;
 }
 

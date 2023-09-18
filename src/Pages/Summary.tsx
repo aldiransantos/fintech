@@ -38,7 +38,7 @@ const Summary = () => {
 					</p>
 				</div>
 			</div>
-			<div className="box mb">
+			<div className="box">
 				<SalesChart data={data} />
 			</div>
 		</section>
